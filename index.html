@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MJ Kalma timmerwerk</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <body>
+        <div class="background">
+            <img src="background.jpg" alt="" />
+        </div>    
+        <article>
+            <img src="logo.png" alt="MJ Kalma timmerwerk" />
+            <h1>MJ <span>Kalma</span> timmerwerk</h1>
+            <p>
+                Het bouwen van een website is niet echt mijn specialiteit.<br />
+                Nee, bouwen doe ik liever in de echte wereld.
+            </p>
+            <p>
+                MJ Kalma timmerwerk is gespecialiseerd in groot- en klein onderhoud,
+                verbouwingen, kozijnen, deuren, aanbouwen, trappen, etc.<br />
+                Voor het betere timmerwerk bent u dan ook aan het juiste adres.
+            </p>
+            <p>
+                Heeft u een mooie klus of wilt u meer informatie over mijn diensten?<br />
+                Bel of mail en ik neem zo spoedig mogelijk contact me u op.
+            </p>
+            <p>Tot ziens in de echte wereld!</p>
+            <div itemscope itemtype="http://schema.org/ContactPoint">
+                <p>
+                    T <span itemprop="telephone">06 - 21 21 13 72</span><br />
+                    E <a href="#"><span itemprop="email">minno [at] mjkalma.nl</span></a>
+                </p>
+            </div>
+            <hr />
+            <div itemscope itemtype="http://schema.org/PostalAddress">
+                <p>
+                    <span itemprop="name">MJ Kalma timmerwerk</span><br />
+                    <span itemprop="streetAddress">Oedsmawei</span>
+                    <span itemprop="postOfficeBoxNumber">24</span><br />
+                    <span itemprop="postalCode">9031XP</span>
+                    <span itemprop="addressLocality">Boksum</span><br />
+                    <span itemprop="addressCountry">Netherlands</span>
+                </p>
+            </div>
+        </article>
+    
+    <script type="application/x-javascript">
+    //<!--[CDATA[
+    
+        (function() {
+            var b = document.getElementsByTagName('span'), c, d;
+            for (var a = 0; a < b.length; a++) {
+                c = b[a];
+                d = c.parentNode;
+                if (c.getAttribute('itemprop') == 'email' && d.tagName.toLowerCase() == 'a') {
+                    c.innerHTML = c.innerHTML.replace(/\s+\[at\]\s+/, '@');
+                    d.href = 'mailto:' + c.innerHTML;
+                }
+            }
+        })();
+    
+    //]]-->
+    </script>
+    
+    </body>
+</html>

@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+* {margin: 0; padding: 0; border: none;}
+body {
+    font: 400 15px/1.2em "Lato", sans-serif;
+    background: #e7e9eb; color: #162c36;
+    text-shadow: 1px 1px 2px #e7e9eb;
+}
+div.background {
+    position: absolute; left: 50%; top: 0;
+    margin: 0 -490px; width: auto;
+    z-index: 10;
+    opacity: 0.6;
+}
+div.background img {width: 100%;}
+
+article {
+    position: absolute; top: 95px; left: 50%;
+    margin: 0 -250px; width: 500px;
+    z-index: 20;
+}
+article > img:first-child {margin: 0 auto; display: block;}
+h1 {display: none;}
+h1 span {color: #bf3038;}
+a {color: #162c36; text-decoration: none;}
+hr {margin: 1.2em 0;border: none; height: 2px; background: #b3babe; width: 100%;}
+
+p {
+    margin: 1.2em 0;
+    font-weight: 400;
+    text-align: center;
+}
+article > p:nth-child(4) {
+    color: #bf3038;
+    font-weight: 700;
+}
+
+div[itemscope] br {display: none;}
+div[itemtype~="http://schema.org/ContactPoint"] p {font-size: 110%; font-weight: 700; color: #bf3038;}
+div[itemtype~="http://schema.org/ContactPoint"] span {color: #162c36;}
+
+@media print {
+    div.background {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    div.background {
+        left: 0; top: 0; bottom: 0; right: 0;width: 100%;
+        margin: inherit; opacity: 0.4;
+    }
+}
+@media screen and (max-width: 500px) {
+    article {margin: inherit;left: 0; top: 4em;width: 100%;}
+    article > img:first-child {display: inline;}
+    p {text-align: left;}
+    div[itemscope] br {display: inherit;}
+}
+@media screen and (max-width: 319px) {
+    article {top: 1em;}
+    article > img:first-child, img {display: none;}
+    h1 {display: block;}
+    article > p {display: none;}
+    div[itemtype~="http://schema.org/ContactPoint"] p {font-size: 100%;}
+}
